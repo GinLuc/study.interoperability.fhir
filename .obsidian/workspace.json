@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "contents/Introducao_FHIR.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "contents/Introducao_FHIR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "contents/Introducao_FHIR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "contents/Introducao_FHIR.md"
               }
             }
           }
@@ -156,8 +156,8 @@
   },
   "active": "32a04b73221d21ac",
   "lastOpenFiles": [
-    "contents/Introducao_FHIR.md",
     "README.md",
+    "contents/Introducao_FHIR.md",
     "Interoperabilidade/Anotações - FHIR/images/patient_resource_r4_xml.png",
     "Interoperabilidade/Anotações - FHIR/images/Screenshot 2024-01-23 at 15-50-39 Patient - FHIR v4.0.1.png",
     "images/patient.md",
