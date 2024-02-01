@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "61308c604df55d0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "dcb5bb6ed4ec6586",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32a04b73221d21ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28f6fb4d9c032793",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5e8d4b565acdb4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12f221ac6f54e6eb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1e73842cc6539162",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8ebb460f0bc8d660",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "8e4caec069ee0e25",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "88cd37ca2b04afed",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c3425d039b7d04f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d5555501fdb7cf8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6b71cadfdb56d8c3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f68d02d102809bee",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "205c0224fa51bde3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "32a04b73221d21ac",
+  "lastOpenFiles": [
+    "contents/Introducao_FHIR.md",
+    "README.md",
+    "Interoperabilidade/Anotações - FHIR/images/patient_resource_r4_xml.png",
+    "Interoperabilidade/Anotações - FHIR/images/Screenshot 2024-01-23 at 15-50-39 Patient - FHIR v4.0.1.png",
+    "images/patient.md",
+    "images",
+    "Interoperabilidade/Anotações - FHIR/images/patient_resource_example.png",
+    "Interoperabilidade/Anotações - FHIR/images",
+    "Interoperabilidade/Anotações - FHIR/Nova pasta",
+    "Anotações - PEC E-SUS APS.md",
+    "Analytics/Cronograma - Atividades nas frentes do DIAna.md",
+    "Interoperabilidade/Anotações - FHIR/Introdução ao FHIR.md",
+    "Interoperabilidade/Anotações - Live do REL (v.3.2.1 - MonkeyPox).md",
+    "Interoperabilidade/Anotações - FHIR"
+  ]
+}
