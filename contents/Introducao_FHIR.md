@@ -22,7 +22,7 @@
 	* o FHIR resolve este problema através da definição de uma *framework* simples para extensão dos recursos existentes e descrição dos seus usos chamado *Profiles* (processo de perfilização dos modelos). 
 		* Todos os sistemas são capazes de ler recursos, mas as aplicações podem adicionar mais controle e significado com o uso dos perfis, principalmente que muitos estabelecimentos de saúde requerem diversas definições internas
 
-## Composição de um Recurso
+## [Composição de um Recurso](#composicao-recurso)
  
  ![Exemplo de registro de Paciente](./images/patient_resource_example.png)
 * ***"Resource Identity & Metadata:"*** parte referente aos dados de identificação  (atributo *id*) e metadados do recurso usado.
