@@ -79,3 +79,9 @@ Como falado anteriormente, cada instância de um Recurso (registro de dado) cons
 ### URLs e Identificadores
 Todos os recursos possuem uma URL que os identificam (seus tipos) e especifica da onde estão sendo acessados. Essa URL não é representada dentro do recurso, sendo utilizada em uso contextual, e mudada conforme surgem cópias dos recursos (perfis), ou por qualquer outra mudança em desenvolvimento/segurança. Se a URL for acessada via API RESTful, então a estrutura dela fica `[base]/[resourceType]/[id]`, sendo o `resourceType` e o `id` adquiridos de dentro do recurso.
 
+### Interações
+Para manipulação dos recursos, o FHIR provê uma [API REST](https://hl7.org/fhir/http.html) com um conjunto completo de interações:
+* *create*: cria um novo recurso em um endereço específico de servidor. Se desejar ter o controle da *id* de um recém submetido recurso, será necessário usar o *update*. Esta interação é performada através do comando HTTP ***POST***: 
+* *read*:
+* *update*:
+* *patch: 
