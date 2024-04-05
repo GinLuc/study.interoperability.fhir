@@ -81,7 +81,54 @@ Todos os recursos possuem uma URL que os identificam (seus tipos) e especifica d
 
 ### Interações
 Para manipulação dos recursos, o FHIR provê uma [API REST](https://hl7.org/fhir/http.html) com um conjunto completo de interações:
-* *create*: cria um novo recurso em um endereço específico de servidor. Se desejar ter o controle da *id* de um recém submetido recurso, será necessário usar o *update*. Esta interação é performada através do comando HTTP ***POST***: 
-* *read*:
-* *update*:
-* *patch: 
+* ***create***: cria um novo recurso em um endereço específico de servidor. Se desejar ter o controle da *id* de um recém submetido recurso, será necessário usar o *update*. Esta interação é performada através do comando HTTP ***POST***: 
+```
+POST https://example.com/path/{resourceType}
+
+HTTP: POST [base]/[type] {?_format=[mime-type]}
+```
+O corpo desta requisição deve ser um recurso FHIR, onde ele não precisa ter um elemento `id`: caso seja passado este elemento, bem como os valores `versionId` e `lastUpdated` do [meta](http://hl7.org/fhir/R4/resource.html#meta), o servidor deve ignorá-los e preenchê-los com novos valores corretos.
+O servidor retorna o código 201 (*Created HTTP status code*), e também deve retornar o cabeçalho `Location` que contém o novo valor [Logical Id](http://hl7.org/fhir/R4/resource.html#metadata) e [Version Id](http://hl7.org/fhir/R4/resource.html#metadata)do recurso recém-criado: `Location: [base]/[type]/[id]/_history/[vid]`, com `id` e `vid` o id e a versão id do novo recurso, respectivamente.
+
+* ***read***: acessa o conteúdo de um recurso através do parâmetro `id`. Esta interação é performada através do comando HTTP ***GET***: 
+```
+ GET https://example.com/path/{resourceType}/{id}
+ 
+ HTTP: GET [base]/[type]/[id] {?_format=[mime-type]}
+```
+* *update*: 
+```
+PUT https://example.com/base/{resourceType}/{id}
+```
+* *patch*:
+```
+PATCH https://example.com/base/{resourceType}/{id}
+```
+* *delete:*
+```
+DELETE https://example.com/base/{resourceType}/{id}
+```
+* *search:*
+```
+GET https://example.com/base/{resourceType}?search parameters...
+```
+* *history:*
+```
+GET https://example.com/base/{resourceType}/{id}/_history
+```
+* *transaction:*
+```
+POST https://example.com/base/(POST a transaction bundle to the system)
+```
+* *operation:*
+```
+GET https://example.com/base/{resourceType}/{id}/${opname}
+```
+
+
+
+## Referências
+
+* [FHIR R4 Official Documentation](http://hl7.org/fhir/R4/index.html)
+* [FHIR R4 - Developer's Overview](http://hl7.org/fhir/R4/overview-dev.html)
+* [FHIR R4 - HTTP](http://hl7.org/fhir/R4/http.html#create)
