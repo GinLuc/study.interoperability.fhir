@@ -96,34 +96,52 @@ O servidor retorna o código 201 (*Created HTTP status code*), e também deve re
  
  HTTP: GET [base]/[type]/[id] {?_format=[mime-type]}
 ```
-* *update*: 
+
+* ***update***: cria uma nova versão para um recurso existente ou cria uma versão inicial se não houver nenhum recurso com o `id` passado. Esta interação é performada através do comando HTTP ***PUT***:
+
 ```
 PUT https://example.com/base/{resourceType}/{id}
 ```
-* *patch*:
+
+Para mais detalhes, veja [este tópico sobre *update*](https://hl7.org/fhir/http.html#update).
+* ***patch***: uma alternativa ao *update*, sendo útil principalmente quando o sistema cliente procura minimizar o uso de conexão de rede, ou em cenários onde o sistema cliente só tenha acesso parcial a um recurso. Esta interação é performada através do comando HTTP ***PATCH***:
 ```
 PATCH https://example.com/base/{resourceType}/{id}
 ```
-* *delete:*
+
+* ***delete:*** remove um recurso existente. Esta interação é performada através do comando HTTP ***DELETE***:
 ```
 DELETE https://example.com/base/{resourceType}/{id}
 ```
-* *search:*
+
+* ***search:*** procura um conjunto de recursos baseado em critérios de filtro, sendo esta interação pode ser performado por diferentes comandos HTTP, podendo ser tanto ***GET*** quanto ***POST*** por exemplo:
 ```
 GET https://example.com/base/{resourceType}?search parameters...
 ```
-* *history:*
+
+Para mais detalhes, veja [este tópico sobre *search*](https://hl7.org/fhir/http.html#search). 
+
+* ***history:*** retorna o histórico tanto de um recurso em particular, quanto de todos os recursos de um determinado tipo, ou até mesmo mesmo de todos os recursos no sistema. Estes 3 tipos de interações são performados pelo comando HTTP ***GET***: 
 ```
 GET https://example.com/base/{resourceType}/{id}/_history
+
+HTTP GET: 
+GET [base]/[type]/[id]/_history{?[parameters]&_format=[mime-type]}
+GET [base]/[type]/_history{?[parameters]&_format=[mime-type]}
+GET [base]/_history{?[parameters]&_format=[mime-type]}
 ```
-* *transaction:*
+
+* ***batch/transaction:*** enviam um conjunto de ações para performar em um servidor uma única requisição/resposta em HTTP. Estas ações podem ser performadas independentemente como um *batch*, ou como uma única *transaction* onde o conjunto inteiro de mudanças funcionam ou falham como uma entidade única. 
 ```
 POST https://example.com/base/(POST a transaction bundle to the system)
 ```
-* *operation:*
+Para mais detalhes, veja [este tópico sobre *batch/transaction*](https://hl7.org/fhir/http.html#transaction).
+
+* ***operation:*** é uma *framework* que permite realizar operações que extendem às padrões da API RESTFul. Para mais detalhes, veja [veja este tópico sobre *operations*](https://hl7.org/fhir/operations.html).
 ```
 GET https://example.com/base/{resourceType}/{id}/${opname}
 ```
+
 
 
 
